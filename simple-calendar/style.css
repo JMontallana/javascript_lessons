@@ -1,0 +1,35 @@
+body {
+    padding: 40px;
+}
+
+label {
+    padding-left: 40px;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+select {
+    padding: 10px;
+    background-color: beige;
+    font-style: italic;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+ul li {
+    list-style: none;
+    width: 20px;
+    background-color: bisque;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+h1 {
+    text-align: center;
+}
