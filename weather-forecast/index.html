@@ -19,11 +19,14 @@
 
     <!-- Javascript -->
     <script>
+        /* Using else if statement */
+
+        /* 
         const select = document.querySelector('select');
         const para = document.querySelector('p')
 
         select.addEventListener('change', setWeather);
-
+        
         function setWeather() {
             const choice = select.value;
 
@@ -39,6 +42,36 @@
                 para.textContent = '';
             }
         }
+        */
+
+        /* Using switch */
+
+        const select = document.querySelector('select');
+        const para = document.querySelector('p')
+
+        select.addEventListener('change', setWeather);
+
+        function setWeather() {
+            const choice = select.value;
+            
+            switch (choice) {
+                case 'sunny':
+                    para.textContent = 'sunny day';
+                    break;
+                case 'rainy':
+                    para.textContent = 'rainyday';
+                    break;
+                case 'snowing':
+                    para.textContent = 'snowy day';
+                    break;
+                case 'overcast':
+                    para.textContent = 'overcast day';
+                    break;
+                default: 
+                    para.textContent = '';
+            }
+        }
+       
     </script>
 </body>
 </html>
