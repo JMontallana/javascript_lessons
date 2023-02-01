@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        function add7(number) {
+            add = number + 7;
+            console.log(add)
+        }
+        add7(4);
+
+        function multiply(numA, numB = 1) {
+            mult = numA * numB;
+            console.log(mult)
+        }
+        multiply(8, 2);
+
+        function capitalize(myString) {
+            let lowerCase = myString.toLowerCase();
+            let arr = lowerCase.split('\n');
+            for (let i = 0; i < arr.length; i++) {
+                arr[i] = arr[i].charAt(0).toUpperCase() + arr[i].slice(1);
+            }
+            const myString2 = arr.join();
+            console.log(lowerCase)
+            console.log(arr)
+            console.log(myString2)
+            
+        }
+        capitalize('montallana');
+
+        function lastLetter(myLetter) {
+            let myLastLetter = myLetter.charAt(myLetter.length -1);
+            console.log(myLastLetter)
+        }
+
+        lastLetter('qwwer')
+
+    </script>
+
+
+</body>
+</html>
